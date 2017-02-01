@@ -1,0 +1,267 @@
+//Mixins
+.clearfix () {
+  *zoom: 1;
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear:both;
+  }
+}
+
+.c {
+  .clearfix;
+}
+
+.bdrs (@radius) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+.bxsh (@string) {
+  box-shadow: @string;
+  -moz-box-shadow: @string;
+  -webkit-box-shadow: @string;
+}
+
+.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+  text-shadow: @string;
+}
+
+.transition-v() {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition:visibility 0s linear 0.2s, opacity 0.2s linear;
+  -moz-transition:visibility 0s linear 0.2s, opacity 0.2s linear;
+  -ms-transition:visibility 0s linear 0.2s, opacity 0.2s linear;
+  -o-transition:visibility 0s linear 0.2s, opacity 0.2s linear;
+  transition:visibility 0s linear 0.2s, opacity 0.2s linear;
+}
+
+.transition-s() {
+  opacity: 1;
+  visibility: visible;
+  transition-delay:0s;
+}
+
+.transition-all () {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.transition-color () {
+  transition: color 0.2s linear 0.2s;
+  -webkit-transition: color 0.2s linear 0.2s;
+  -moz-transition: color 0.2s linear 0.2s;
+  -o-transition: color 0.2s linear 0.2s;
+  -ms-transition: color 0.2s linear 0.2s;
+}
+
+.transition-bg () {
+  transition: background 0.1s linear 0.1s; 
+  -webkit-transition: background 0.1s linear 0.1s;
+  -moz-transition: background 0.1s linear 0.1s;
+  -o-transition: background 0.1s linear 0.1s;
+  -ms-transition: background 0.1s linear 0.1s;
+}
+
+.transition-bg-200 () {
+  transition: background 0.2s linear 0.2s; 
+  -webkit-transition: background 0.2s linear 0.2s;
+  -moz-transition: background 0.2s linear 0.2s;
+  -o-transition: background 0.2s linear 0.2s;
+  -ms-transition: background 0.2s linear 0.2s;
+}
+
+.transition-bgc () {
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.horizontal-gradient (@startColor: #eee, @endColor: white) {
+  background-color: @startColor;
+  background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
+  background-image: -webkit-linear-gradient(left, @startColor, @endColor);
+  background-image: -moz-linear-gradient(left, @startColor, @endColor);
+  background-image: -ms-linear-gradient(left, @startColor, @endColor);
+  background-image: -o-linear-gradient(left, @startColor, @endColor);
+}
+
+.gradient (@startColor: #eee, @endColor: white) {
+  background-color: @startColor;
+  background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+  background: -webkit-linear-gradient(top, @startColor, @endColor);
+  background: -moz-linear-gradient(top, @startColor, @endColor);
+  background: -ms-linear-gradient(top, @startColor, @endColor);
+  background: -o-linear-gradient(top, @startColor, @endColor);
+}
+
+.box-sizing () {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.bg-sizing(@in) {
+  -webkit-background-size: @in;
+  -moz-background-size: @in;
+  -o-background-size: @in;
+  background-size: @in;
+}
+
+.placeholder(@color) {
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color:    @color;    
+    }
+
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    @color;
+        opacity:  1;
+        
+    }
+
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    @color;
+        opacity:  1;  
+    }
+    
+    :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color:    @color;   
+    }
+}
+
+.fz0 () {
+  font-size: 0;
+}
+
+.button() {
+      text-decoration: none;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 20px;
+      display: inline-block;
+      font-size: 14px;
+      color: @light !important;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      border-radius: 4px;
+      background-color: @links;
+      font-weight: bold;
+
+      .fa {
+        margin-left: 6px;
+        color: #f9b435;
+      }
+
+      &:hover {
+        color: @light;
+        background-color: @links-hover;
+      }
+
+      &.dark {
+        background-color: @dark;
+        color: @light !important;
+
+        &:hover {
+          background-color: @light;
+          color: @dark !important;
+        }
+
+      }
+
+      &.button-large {
+        font-size: 24px;
+        height: 78px;
+        line-height: 78px;
+        width: 600px;
+
+        @media @mobile {
+          width: 100%;
+        }
+
+      }
+
+}
+
+.adisabled() {
+
+   /*CSS transitions*/
+
+   -o-transition-property: none !important;
+
+   -moz-transition-property: none !important;
+
+   -ms-transition-property: none !important;
+
+   -webkit-transition-property: none !important;
+
+   transition-property: none !important;
+
+   /*CSS transforms*/
+
+   -o-transform: none !important;
+
+   -moz-transform: none !important;
+
+   -ms-transform: none !important;
+
+   -webkit-transform: none !important;
+
+   transform: none !important;
+
+   /*CSS animations*/
+
+   -webkit-animation: none !important;
+
+   -moz-animation: none !important;
+
+   -o-animation: none !important;
+
+   -ms-animation: none !important;
+
+   animation: none !important;
+
+}
+
+.fAwesome() {
+  font-family: 'fontAwesome';
+}
+
+.light() {
+  font-family: 'proxima-light';
+  font-weight: normal;
+}
+
+.regular() {
+  font-family: 'proxima';
+  font-weight: normal;
+}
+
+.semibold() {
+  font-family: 'proxima-semibold';
+  font-weight: normal;
+}
+
+.bold() {
+  font-family: 'proxima-bold';
+  font-weight: normal;
+}
+
+.extrabold() {
+  font-family: 'proxima-extrabold';
+  font-weight: normal;
+}
+
+
