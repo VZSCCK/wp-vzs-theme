@@ -15,6 +15,8 @@
                 		
 						<p>Obsah této stránky je pouze pro registrované a přihlášené uživatele.</p>
 							<p><a href="<?php echo wp_login_url(); ?>"><strong>Přihlašte se prosím zde</strong></a></p>
+				                        <p><a href="../pro-cleny/zadost">Žádost o přidělení přístupových údajů</a></p>
+
 				
                 	<?php }
                 } else {
