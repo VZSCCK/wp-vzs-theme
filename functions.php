@@ -29,7 +29,7 @@ function new_nav_menu_items($items, $args) {
         
         $afterlink = '<li class="special-link species-2 '.$act.'"><a href="http://shop.vzs.cz/" target="_blank">E-shop</a></li>';
         
-        $items = $items . $afterlink;
+        $items = $beforelink . $items . $afterlink;
     }
     return $items;
 }
