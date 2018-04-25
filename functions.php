@@ -25,7 +25,7 @@ add_filter('login_redirect', 'soi_login_redirect', 10, 3);
 
 function new_nav_menu_items($items, $args) {
     if( $args->theme_location == 'header' ){
-        $beforelink = '<li class="special-link social-menu"><a target="_blank" href="https://facebook.com/VZSCCK"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>  <a target="_blank" href="https://www.instagram.com/vzscck/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>';
+        $beforelink = '<li class="social-menu"><a target="_blank" href="https://facebook.com/VZSCCK"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>  <a target="_blank" href="https://www.instagram.com/vzscck/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>';
         
         $afterlink = '<li class="special-link species-2 '.$act.'"><a href="http://shop.vzs.cz/" target="_blank">E-shop</a></li>';
         
