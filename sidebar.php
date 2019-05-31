@@ -26,8 +26,6 @@
             <div class="fcb text-center"><a href="https://www.facebook.com/VZSCCK" target="_blank" class="fcb-link"><img src="<?php echo BASE_URL; ?>/images/fcb.png" alt="Facebook VSZ"></a></div>
           </div>
 
-          <a target="_blank" href="https://www.darcovskasms.cz/projekt-957/bezpen-u-vody-pomozte-nm-pomhat.html" class="banner"><img src="<?php echo BASE_URL; ?>/images/banner.jpg" alt="Dárcovská DMS"></a>
-
           <a target="_blank" href="http://bit.ly/Podporuji-Vodní-Záchrannou-Službu" class="banner"><img src="<?php echo BASE_URL; ?>/images/banner2.jpg" alt="GIVT - klikni a pomáhej"></a>
 
           <div id="calendar">
