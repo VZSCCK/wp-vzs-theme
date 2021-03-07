@@ -9,7 +9,7 @@
 
               <?php 
                 //pro cleny a podstranky
-                if($post->ID == 41 || $post->post_parent == 41) {
+                if($post->ID == 41 || in_array(41, get_post_ancestors( $post->ID ))) {
                   if ( is_user_logged_in() ) {
                     the_content(); ?>
 
