@@ -27,7 +27,7 @@
           </div>
 
 <?php
-          if($post->ID == 18 || ($post->post_parent == 18) ;
+          if($post->ID == 18 || $post->post_parent == 18) ;
              else { ?>
                     <a target="_blank" href="https://www.zachrankaapp.cz" class="banner"><img src="<?php echo BASE_URL; ?>/images/banner3.jpg" alt="Aplikace ZACHRANKA"></a>
           
