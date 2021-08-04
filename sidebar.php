@@ -34,7 +34,7 @@
                     <a target="_blank" href="http://bit.ly/Podporuji-Vodní-Záchrannou-Službu" class="banner"><img src="<?php echo BASE_URL; ?>/images/banner2.jpg" alt="GIVT - klikni a pomáhej"></a>
 
                     <div id="calendar">
-                              <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;ctz=Europe%2FPrague&amp;src=dnpzLmN6X3I3ZmdrdjBldjl0cm1nZW4zcjBpYzF2dWw0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%2342104A&amp;src=aG9zdEB2enMuY3o&amp;color=%23BE6D00&amp;src=aW5mb0B2enMuY3o&amp;color=%232F6309&amp;src=Y3MuY3plY2gjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%FFFFFF23&amp;" height="300" style="border: 1px solid #eee;"></iframe>   
+                              <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FPrague&amp;src=dnpzLmN6X3I3ZmdrdjBldjl0cm1nZW4zcjBpYzF2dWw0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=Y19namlqc3NiYWtwZWRpbTExZ2RpYTcxbDJwMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=aG9zdEB2enMuY3o&amp;src=Y3MuY3plY2gjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23009688&amp;color=%23F6BF26&amp;color=%237CB342&amp;color=%23E67C73&amp;showTitle=0&amp;showDate=1&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" height="300" style="border: 1px solid #eee;"></iframe>   
                               <div class="text-center"><a href="<?php echo get_permalink(39); ?>">Zobrazit celý kalendář</a></div>
                     </div>
           <?php } ?> 
