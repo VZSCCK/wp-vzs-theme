@@ -11,7 +11,7 @@
               <div class="about">
                 <p>VZS ČČK, zapsaný spolek, má ústřední orgán, který tvoří 7-mi členné Prezidium v čele s Prezidentem VZS ČČK.</p>
 
-                <p>Tito jsou voleni na čtyřleté období republikovou konferencí s účastí zástupců pobočných spolků VZS ČČK.</p>
+                <p>Tito jsou voleni na pětileté období republikovou konferencí s účastí zástupců pobočných spolků VZS ČČK.</p>
 
                 <a href="" class="more-link">Více o nás <i class="fa fa-angle-right"></i></a>
               </div>
