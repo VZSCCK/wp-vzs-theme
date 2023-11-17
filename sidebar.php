@@ -29,7 +29,7 @@
 <?php
           if($post->ID == 18 || $post->post_parent == 18) ;
              else { ?>
-                    <a target="_blank" href="https://www.zachrankaapp.cz" class="banner"><img src="<?php echo BASE_URL; ?>/images/banner3.jpg" alt="Aplikace ZACHRANKA"></a>
+                    <a target="_blank" href="https://www.zachrankaapp.cz" class="banner"><img src="<?php echo BASE_URL; ?>/images/banner4.gif" alt="Aplikace ZACHRANKA"></a>
           
                     <a target="_blank" href="http://bit.ly/Podporuji-Vodní-Záchrannou-Službu" class="banner"><img src="<?php echo BASE_URL; ?>/images/banner2.jpg" alt="GIVT - klikni a pomáhej"></a>
 
